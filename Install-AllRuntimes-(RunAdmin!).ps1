@@ -39,36 +39,6 @@ if (Test-Path $netFolder) {
     Write-Log "No .Net folder"
 }
 
-# Java section
-$javaFolder = Join-Path $rootPath "Java (Adoptum)"
-Write-Log "About to check Java folder"
-if (Test-Path $javaFolder) {
-    Write-Log "Entering Java section"
-    Get-ChildItem -Path $javaFolder -Filter "*.msi" | ForEach-Object {
-        $file = $_.FullName
-        $name = $_.Name
-
-        $args = @(
-            "/i"
-            "`"$file`""
-            "/quiet"
-            "/norestart"
-            "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome"
-        )
-
-        Write-Log "Installing Java: $name → $($args -join ' ')"
-        try {
-            Start-Process msiexec.exe -ArgumentList $args -Wait -NoNewWindow
-            Write-Log "Completed Java: $name"
-        } catch {
-            Write-Log "Error in Java ${name}: $_"
-        }
-    }
-    Write-Log "Java section finished"
-} else {
-    Write-Log "No Java folder"
-}
-
 # VC++ section - with fixed flag for 2005
 $vcFolder = Join-Path $rootPath "Visual Studio (VC++)"
 Write-Log "About to check VC++ folder"
