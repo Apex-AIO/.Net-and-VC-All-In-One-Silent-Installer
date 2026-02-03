@@ -17,15 +17,17 @@ One script to silently install every major **.NET** runtime (1.0 → 10.x) and *
 2. Right-click **Windows PowerShell** → **Run as administrator**  
 3. In the **Powershell**, Follow Below ↓ 
 
-(you **WILL** need to change the path to match where you're storing it, the below commands are just an example):
+(you **WILL** need to change the path to match to your pc name, the below commands are just an **example**):
 
-Change this to where you extracted the ".Net-and-VC-All-In-One-Silent-Installer" Folder ↓
+**(This also assumes you've extracted it to your desktop)**
+
+Change this path to match the name of your pc ↓
    ```
-   & "C:\Users\YourUsername\Desktop
+   & "C:\Users\YourUsername
    ```
 Add this to the end of your path ↓
    ```
-   \.Net-and-VC-All-In-One-Silent-Installer-main\Install-AllRuntimes-(RunAdmin!).ps1"
+   \Desktop\.Net-and-VC-All-In-One-Silent-Installer-main\Install-AllRuntimes-(RunAdmin!).ps1"
    ```
 Your Path Should look like this now ↓
    ```
