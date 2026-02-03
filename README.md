@@ -6,7 +6,7 @@ One script to silently install every major **.NET** runtime (1.0 → 10.x) and *
 
 1. Click the green **[<> Code]** button at the top right of this repository page  
 2. Click **Download ZIP**  
-3. Extract the ".Net-and-VC-All-In-One-Silent-Installer" Folder from the downloaded ZIP Folder.
+3. Extract the ".Net-and-VC-All-In-One-Silent-Installer" Folder from the downloaded ZIP Folder to the desktop.
 4. Continue with the **How to Use** instructions below ↓
 
 ## How to Use
@@ -19,7 +19,7 @@ One script to silently install every major **.NET** runtime (1.0 → 10.x) and *
 
 (you **WILL** need to change the path to match where you're storing it, the below commands are just an example):
 
-Change this to match your path  ↓
+Change this to where you extracted the ".Net-and-VC-All-In-One-Silent-Installer" Folder ↓
    ```
    & "C:\Users\YourUsername\Desktop
    ```
