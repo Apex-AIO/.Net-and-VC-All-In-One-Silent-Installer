@@ -4,14 +4,14 @@ Do **not** rename or move the three subfolders — the script looks for them by 
 
 ### Method 1
 
-1. Extract "AIO-.Net---VC----main"
+1. Extract "AIO-.Net---VC----main file from the .zip"
 2. Right-click `Install-AllRuntimes-(RunAdmin!).ps1`
 3. Choose **Run with PowerShell as administrato OR Run as administrator**
 4. Let the installer run, it'll tell you when it's finished and will give you a .log you can check afterwards.
 
 ### Method 2 – When right-click → Run as admin is missing / doesn't work
 
-1. Extract "AIO-.Net---VC----main"
+1. Extract "AIO-.Net---VC----main file from the .zip"
 2. Press Win + S → type PowerShell
 3. Right-click Windows PowerShell → Run as administrator
 4. In the blue window, type (adjust the path depending on where you saved the AIO):
