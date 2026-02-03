@@ -1,24 +1,24 @@
-Do **not** rename or move the three subfolders — the script looks for them by exact name.
 
-## How to Run
+**Important:** The script looks for these **exact folder names**. Do not rename or move them.
 
-### Method 1
+## How to Use
 
-1. Extract "AIO-.Net---VC----main file from the .zip"
-2. Right-click `Install-AllRuntimes-(RunAdmin!).ps1`
-3. Choose **Run with PowerShell as administrato OR Run as administrator**
-4. Let the installer run, it'll tell you when it's finished and will give you a .log you can check afterwards.
+### Recommended: Method 1 (if available)
 
-### Method 2 – When right-click → Run as admin is missing / doesn't work
+1. Download and extract the ZIP from the repository
+2. Right-click on `Install-AllRuntimes-(RunAdmin!).ps1`
+3. Select **Run with PowerShell as administrator**  
+   (or **Run as administrator** if you see that option)
+4. Wait — the PowerShell window will show progress
+5. When finished, you'll see a confirmation message
 
-1. Extract "AIO-.Net---VC----main file from the .zip"
-2. Press Win + S → type PowerShell
-3. Right-click Windows PowerShell → Run as administrator
-4. In the blue window, type (adjust the path depending on where you saved the AIO):
+### Method 2 – When right-click option is missing or doesn't work
 
+1. Extract the ZIP to a folder (e.g. Desktop\Apexs-AIO)
+2. Open **File Explorer** and navigate to the Apexs-AIO folder
+3. In the address bar at the top, click once → type `cmd` → press Enter  
+   → this opens Command Prompt in the correct directory
+4. In the black Command Prompt window, paste this **single line** and press Enter:
 
-& "ThePathYouDownloadedTheAIO\Apexs-AIO\Install-AllRuntimes-(RunAdmin!).ps1"
-
-
-4. "Confirm everything installed correctly via Windows key + S > search; "Installed Apps" > (sort by date installed) > Confirm"
-5. Restart to apply changes.
+   ```cmd
+   powershell -ExecutionPolicy Bypass -Command "Start-Process powershell -Verb RunAs -ArgumentList '-NoProfile -File \"Install-AllRuntimes-(RunAdmin!).ps1\"'"
