@@ -4,7 +4,6 @@ Silent All-in-One .NET Runtime & VC++ Redistributable Installer (2005–2026) x8
 
 ### Currently contains;
 
-
 .NET 10.0 (latest)
 
 .NET 9.0
