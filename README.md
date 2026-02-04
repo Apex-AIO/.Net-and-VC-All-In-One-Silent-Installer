@@ -4,6 +4,8 @@ Silent All-in-One .NET Runtime & VC++ Redistributable Installer (2005–2026) x8
 
 ### Currently contains;
 
+googled44452d40b868ee8.html
+google-site-verification: googled44452d40b868ee8.html
 
 .NET 10.0 (latest)
 
